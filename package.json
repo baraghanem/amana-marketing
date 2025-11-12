@@ -8,8 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.9",
     "lucide-react": "^0.544.0",
     "next": "15.5.3",
+    "prop-types": "^15.8.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-is": "^19.2.0",
