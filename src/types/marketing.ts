@@ -37,7 +37,7 @@ export interface DemographicPerformance {
 
 export interface DemographicBreakdown {
   age_group: string;
-  gender: string;
+  gender: 'Male' | 'Female' | 'Other';
   percentage_of_audience: number;
   performance: DemographicPerformance;
 }
@@ -168,3 +168,4 @@ export interface ApiResponse {
   message?: string;
   data?: MarketingData;
 }
+
