@@ -132,6 +132,7 @@ export interface Campaign {
   weekly_performance: WeeklyPerformance[];
   regional_performance: RegionalPerformance[];
   creatives: Creative[];
+  device_breakdown: DevicePerformance[];
   timeline: Timeline;
   targeting: Targeting;
 }
@@ -169,5 +170,14 @@ export interface ApiResponse {
   error?: string;
   message?: string;
   data?: MarketingData;
+}
+
+export interface DevicePerformance {
+  device: string;
+  spend: number;
+  revenue: number;
+  clicks: number;
+  conversions: number;
+  roas: number;
 }
 
